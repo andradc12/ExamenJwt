@@ -20,6 +20,8 @@ public class UserModel implements UserDetails {
     private Long id;
     private String username;
     private String password;
+
+    private String nota;
     private String firstName;
     private String lastName;
     private String email;
@@ -97,6 +99,14 @@ public class UserModel implements UserDetails {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getNota() {
+        return nota;
+    }
+
+    public void setNota(String nota) {
+        this.nota = nota;
     }
 
     public void setEmail(String email) {
